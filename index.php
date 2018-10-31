@@ -217,7 +217,6 @@ li.dropdown {
 <!-----------end topnav------------->
 .box{
 font-family: Roboto;
-
 }
 
 table {
@@ -255,6 +254,41 @@ padding-left:10px;
 th:nth-of-type(1){
 padding-left:10px;
 }
+
+
+<!------------video--------------->
+.container ~ .row {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 150px;
+   text-align:center;
+}
+
+
+.col-sm-6{
+ position:relative;
+ width:50%;
+ height: 50%;
+ padding-top: 10px;
+ text-align:center;
+ font-family: Roboto;
+ 
+
+}
+
+.col-sm-6 > p {
+    text-align: middle;
+    line-height: 1.5;
+    padding-left: 50px;
+    color: block;
+    font-family: Roboto;
+}
+
+
+<!---------end video--------------->
+
+
+
 <!------------footer--------------->
 footer >.text-md-left {
     text-align: left!important;
@@ -406,7 +440,7 @@ padding-left:50px;
 <!--  Top Nav section ------->
   
  <nav class="navbar navbar-expand-lg sticky-top bg-secondary">
-  <a class="navbar-brand text-white " href="#">SMCAC</a>
+  <a class="navbar-brand text-white " href="https://www.smcac.org/default.php">SMCAC</a>
   <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -414,7 +448,7 @@ padding-left:50px;
   <div class="collapse navbar-collapse" id="navbarColor03">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-white" href="https://www.smcac.org/default.php">Home <span class="sr-only">(current)</span></a>
       </li>
        <li class="nav-item dropdown">
  	<a class="nav-link text-white"  href="https://www.smcac.org/AboutUs.php" class="dropbtn">About Us</a>
@@ -517,21 +551,24 @@ padding-left:50px;
      <!------------------ End Advisors Table-------------------->
  				<div class="clear"></div><!-- added extra empty div -->
  				
- <!----------------------testing table--------------------------->
+ <!----------------------video--------------------------->
  
+<div class="container " id="JimmyFund">
+      <div class="row">
+	  <div class="col-sm-6">
+	    <p class="h3 text-uppercase">Check out this short video</p>
+	    <p class="text-muted">Showing how SMCAC supports Cancer Research at the Jimmy Fund and Putting for Patients in the Boston area</P>
+	  </div>
+  
+	  <div class="col-sm-6">
+	     <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fsmcac.org%2Fvideos%2F10155119625278850%2F&width=500&show_text=false&appId=1223548147779110&height=281" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+	     
+	  </div>
+	</div>
+</div>
 
  
- <!----------------------------end testing------------------------->				
- 				
- 				
- 				
- 				
- 				
- 				
- 				
- 				
- 				
- 				
+ <!----------------------------end video------------------------->				
  				
  				
  				
