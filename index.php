@@ -38,7 +38,24 @@ ga('send', 'pageview');
   gtag('js', new Date());
 
   gtag('config', 'GA_TRACKING_ID');
-</script>
+  </script>
+  
+  <script>
+			               
+					$('.count').each(function () {
+   					 var $this = $(this);
+					  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+					    duration: 4000,
+					    easing: 'swing',
+					    step: function () {
+					      $this.text(Math.ceil(this.Counter));
+					    }
+					  });
+					});
+</script>   
+  
+  
+
 <style>
 html, body {
 width:100%;
@@ -58,7 +75,7 @@ font-family: Roboto;
 background-color:#303131;
 
 }
-.Single
+.count
 {
   color: yellow;
   margin-left:auto;
@@ -418,7 +435,7 @@ padding-left:50px;
 
 <body>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- End jQuery first, then Popper.js, then Bootstrap JS -->	
@@ -580,15 +597,16 @@ padding-left:50px;
 			         
 			 	   <div class="item">
 			 		
-			 		  <span class="Single">530</span>
+			 		  <span class="count">530</span>
 			 		    <p>Donors and Recipients</p>
 			                  
 			           </div>
-			 	
+			 	   
+
 			 	
 			 	   <div class="item" style="width:20%">
 			 		
-			 		  <span class="Single">2</span>
+			 		  <span class="count">2</span>
 			 		    <p>Advisors</p>
 			                  	
 			           </div>
@@ -596,7 +614,7 @@ padding-left:50px;
 			 	
 			 	   <div class="item" style="width:20%">
 			 		
-			 		   <span class="Single">10</span>
+			 		   <span class="count">10</span>
 			 		     <p>Years SMCAC has existed</p>
 			                	
 			           </div>
@@ -604,27 +622,15 @@ padding-left:50px;
 			 
 			 	   <div class="item" style="width:20%">
 			 		
-			 		   <span class="Single">2040</span>
+			 		   <span class="count">2040</span>
 			 		        <p>Recycled Equipment</p>
-			                  
-			               		
+			                 
 			           </div>
 			  
 			       </div>
 			</div>
-			<script>
-					$('.Single').each(function () {
-					  var $this = $(this);
-					  jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-					    duration: 4000,
-					    easing: 'swing',
-					    step: function () {
-					      $this.text(Math.ceil(this.Counter));
-					    }
-					  });
-					});
-			</script>   
-					 <div class="clear"></div><!-- added extra empty div -->
+			
+				 <div class="clear"></div><!-- added extra empty div -->
 <!--  Count number section end-->  
            
 <!-- Footer -->
