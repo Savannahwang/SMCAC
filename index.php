@@ -73,7 +73,6 @@ text-align: center;
 display: inline-block;
 font-family: Roboto;
 background-color:#303131;
-
 }
 .count
 {
@@ -434,11 +433,11 @@ padding-left:50px;
 </head>
 
 <body>
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <!-- End jQuery first, then Popper.js, then Bootstrap JS -->	
+<!-- End jQuery first, then Popper.js, then Bootstrap JS -->	
 		 
 		 
 <!--  Logo section -->		 
@@ -659,16 +658,16 @@ padding-left:50px;
 
             <ul id="list-unstyled">
               <li>
-                <a href="#!">Email</a>
+                <a href="">Email</a>
               </li>
               <li>
-                <a href="#!">Facebook</a>
+                <a href="https://www.facebook.com/smcac.org/?ref=br_rs" target="_blank">Facebook</a>
               </li>
               <li>
-                <a href="#!">United Cure</a>
+                <a href="http://unitedcure.org/index.php" target="_blank">United Cure</a>
               </li>
               <li>
-                <a href="#!">Recycle Computer</a>
+                <a href="http://www.recyclecomputers4cancer.org/" target="_blank">Recycle Computer</a>
               </li>
             </ul>
 
@@ -683,16 +682,16 @@ padding-left:50px;
 
             <ul id="list-unstyled">
               <li>
-                <a href="#!">CancerTypes</a>
+                <a href="https://www.smcac.org/Researches.php" target="_blank">CancerTypes</a>
               </li>
               <li>
-                <a href="#!">Advisors</a>
+                <a href="https://www.smcac.org/cancertypes-advisors.php" target="_blank">Advisors</a>
               </li>
               <li>
-                <a href="#!">Donation</a>
+                <a href="https://www.smcac.org/donate/index.php" target="_blank">Donation</a>
               </li>
               <li>
-                <a href="#!">Partners</a>
+                <a href="https://www.smcac.org/AboutUs.php" target="_blank">Partners</a>
               </li>
             </ul>
 
