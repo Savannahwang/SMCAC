@@ -1,0 +1,40 @@
+<?php
+// Was the form submitted?
+if ( $_SERVER[ 'REQUEST_METHOD' ] == 'POST' )
+{
+// Connect to the database .
+  require ( 'mysqli_advisorsconnect.php' ) ;
+// Load the validation functions.
+
+// Check the login data
+ 
+  if ( empty( $email ) ) 
+  { $errors[] = 'You forgot to enter your email address.';
+
+  // Has the password been entered
+  if ( empty( $psword ) ) 
+  { $errors[] = 'Enter your password.' ; 
+  } 
+  else { $psword = mysqli_real_escape_string( $dbcon, trim( $psword ) ) ; 
+  }
+  // If everything is OK select the email and the psword from the members' table
+  if ( empty( $errors ) ) 
+  {
+  	
+    $q = "SELECT id, name FROM Scientists WHERE email='$email' AND psword=SHA1('$psword')" ;  
+    $result = @mysqli_query ( $dbcon, $q ) ;
+    if ( @mysqli_num_rows( $result ) == 1 ) 
+    {
+      $row = mysqli_fetch_array ( $result, MYSQLI_ASSOC ) ;
+      return array( true, $row ) ;
+    }
+    
+    else { $errors[] = 'The email address and password entered do not match those on file.';
+        
+    }
+  }
+}
+ 
+  header( "Location: https://www.smcac.org/cancertypes-advisors-edit.php") ; 
+  exit() ;
+}
