@@ -1,0 +1,450 @@
+<?php
+session_start() ;
+// Redirect the user if not logged in
+if ( !isset( $_SESSION[ 'id' ] ) ) 
+{
+require ( 'redirect_login.php' ) ; load() ;
+ }
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add_content</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384 MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<META NAME="Keywords" Content="cancer, network, community, patients, research" >
+<META NAME="Description" Content="SMCAC is an unbiased non-profit organization of cancer patients, activists, and experts">
+<META NAME="y_key" content="7976ac40c28a0559" />
+<META NAME="google-site-verification" content="2RYLmAAta3Xu5iguEi_BgEXxpPFC4dZ31rSDdynerAM" />
+<script src="../includes/common/js/base.js" type="text/javascript"></script>
+<script src="../includes/common/js/utility.js" type="text/javascript"></script>
+<script src="../includes/skins/style.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<style>
+
+html, body {
+width:100%;
+height:100%;
+margin: 0;
+padding: 0;
+border:0;
+display: block;
+}
+.logo{
+width:100%;
+display:inline;
+}
+.logo > h1{
+font-family:'Poiret One', cursive;
+font-weight: 800;
+font-size: 48px;
+float:left;
+margin-left:20px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.btn-danger{
+margin-right:30px;
+vertical-align: middle;
+margin-top:40px;
+}
+.navbar, .navbar-expand-lg,.sticky-top, .navbar-light, .bg-light{
+width:100%;
+}
+h4{
+font-family: Roboto;
+<!---------------topnav--------------->
+.topnav{
+with:100%;
+}
+.topnav > ul {
+    list-style-type: none;
+    margin-left:0;
+    margin-right:0;
+    margin-bottom:0;
+    color:black;
+    background-color: yellow;
+    font-family: Roboto;
+    
+}
+
+.topnav > ul > li {
+    display: inline-block;
+    text-align: justify;
+    margin-left:115px;
+    margin-right:auto;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+<!-----------end topnav------------->
+<!------------footer--------------->
+footer >.text-md-left {
+    text-align: left!important;
+}
+footer{
+display:block;
+text-align: left;
+font-family: Roboto;
+
+}
+
+footer.page-footer {
+    bottom: 0;
+    color: black;
+    width: auto;
+}
+footer.page-footer a {
+    color: black;
+}
+footer > a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    background-color: transparent;
+}
+.font-small {
+    font-size: .9rem;
+}
+
+.pt-4 {
+    padding-top: 1.5rem!important;
+}
+footer.container-fluid {
+    width: auto;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: left!important;
+}
+footer >.col-md-6{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 50%;
+    max-width: 40%;
+}
+
+footer.page-footer .footer-copyright {
+    background-color: rgba(0,0,0,.2);
+    color: #000000;
+    text-align:center;
+}
+
+footer > .py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+footer > .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    text-align:center;
+}
+
+
+footer > h5 {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom:0;
+    
+}
+footer > .text-uppercase {
+    text-transform: uppercase!important;
+    padding-left:0;
+
+}
+.text-uppercase > p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+.col-md-3 > h5{
+font-size:1rem;
+font-weight:bold;
+padding-left:50px;
+}
+#list-unstyled{
+ position:relative;
+ width:100%;
+ text-align: center;
+ margin-right: 0;
+ font-family: Roboto;
+ line-height:0;
+}
+
+#list-unstyled > li {
+    list-style-type: none;
+    width:100%;
+    margin-bottom:0;
+    font-family: Roboto;  
+    text-align: left;
+    display: inline-block;
+}
+<!------------end footer----------->
+</style>
+
+</head>
+<body>
+<!--  Logo section -->		 
+		
+  		<div class="logo">
+		 <h1>Scientific and Medical Coalition Against Cancer</h1>
+		
+		 <a href="https://www.smcac.org/donate/index.php"><button type="button" class="btn btn-danger btn-md float-sm-right">Donate Now</button></a>
+	        </div>
+		
+		  
+ <!--  End Logo section -->	
+<!--  Top Nav section ------->
+  
+ <nav class="navbar navbar-expand-lg sticky-top bg-secondary">
+  <a class="navbar-brand text-white " href="https://www.smcac.org/default.php">SMCAC</a>
+  <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-white" href="https://www.smcac.org/default.php">Home <span class="sr-only">(current)</span></a>
+      </li>
+       <li class="nav-item dropdown">
+ 	<a class="nav-link text-white"  href="https://www.smcac.org/AboutUs.php" class="dropbtn">About Us</a>
+	  <div class="dropdown-content">
+            <a href="https://www.smcac.org/cancertypes-advisors.php">Cancer Types-Advisors</a>
+	  </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="https://www.smcac.org/Researches.php">Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="https://www.smcac.org/donate/index.php">Donate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="https://www.smcac.org/Join Us.php">Impact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" href="https://www.smcac.org/Add_content.php">Add Content</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Cancer Search">
+      <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+ 		
+ 
+<!--End Top Nav section -->
+  	      <!--  Middle SECTION -->
+
+ 
+		
+       	 	    <div class="w3-row">
+              	 	<img src="https://smcac.org/images/add_content.png" style="width:100%">             
+                    </div>
+
+<br><br>  
+       
+<section>	
+
+
+<?php 
+       $user = isset($_SESSION['name']) ? $_SESSION['name'] : ""; 
+          echo '<span>Hi User, <strong>' .$user. '</strong></span>';
+       ?>
+       
+         		
+     <div class="w3-container">
+                <div class="w3-row">
+                  <form method="post" action="process_addcontent.php">
+                  	
+                    	<p><label class="label" for="id">Id:</label>
+				  <input id="id" type="id" name="id" size="30" maxlength="40" value="<?php if (isset($_POST['id'])) echo $_POST['id']; ?>"></p>
+				  
+          	 	 <p><label class="label" for="type">Cancer Type:</label>
+				  <input id="type" type="text" name="type" size="30" maxlength="40" value="<?php if (isset($_POST['type'])) echo $_POST['type']; ?>"></p>
+				  
+	  				<br>
+			 <p><label class="label" for="intro">Introduction:</label>
+				  <textarea id="intro" type="text" name="introduction" row="4" col="40"><?php if (isset($_POST['intro'])) echo $_POST['intro'];?></textarea></p>
+	 
+  				<br>
+  		         <p><label class="label" for="cur_treatment">Cure Treatment:</label>
+  				  <textarea id="cur_treatment" type="text" name="Cure Treatment" row="4" col="40"><?php if (isset($_POST['cur_treatment'])) echo $_POST['cur_treatment'];?></textarea></p>
+				  
+				  <br>
+			 <p><label class="label" for="clin_trails">Clinic Trials:</label>
+  				  <textarea id="clin_trails" type="text" name="Clinic Trials" row="4" col="40"><?php if (isset($_POST['clin_trails'])) echo $_POST['clin_trails']; ?></textarea></p>
+				  
+				  <br>
+			 <p><label class="label" for="in_depth_info">In Depth Information:</label>
+  				  <textarea id="in_depth_info" type="text" name="In Depth Information" row="4" col="40"><?php if (isset($_POST['in_depth_info'])) echo $_POST['in_depth_info']; ?></textarea></p>
+				  
+				  <br>
+			 <p><label class="label" for="'authors">Author:</label>
+  				  <input id="authors" type="text" name="authors" size="30" maxlength="20" value="<?php if (isset($_POST['authors'])) echo $_POST['authors']; ?>"></p>				  
+				  
+				  <br>
+				  <input id="submit" type="submit" name= "Submit" value="Add">  
+
+			 </form>			
+		</div> 
+      </div>  
+ </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- Footer -->
+<footer class="page-footer font-small bg-light pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase"><strong>SMCAC</strong></h5>
+          <p>Unity of the Scientific and Medical community devoted to understanding and beating cancer.</p>
+
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Contact</h5>
+
+            <ul id="list-unstyled">
+              <li>
+                <a href="">Email</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/smcac.org/?ref=br_rs" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="http://unitedcure.org/index.php" target="_blank">United Cure</a>
+              </li>
+              <li>
+                <a href="http://www.recyclecomputers4cancer.org/" target="_blank">Recycle Computer</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+
+            <!-- Links -->
+            <h5 class="text-uppercase">Resources</h5>
+
+            <ul id="list-unstyled">
+              <li>
+                <a href="https://www.smcac.org/Researches.php" target="_blank">CancerTypes</a>
+              </li>
+              <li>
+                <a href="https://www.smcac.org/cancertypes-advisors.php" target="_blank">Advisors</a>
+              </li>
+              <li>
+                <a href="https://www.smcac.org/donate/index.php" target="_blank">Donation</a>
+              </li>
+              <li>
+                <a href="https://www.smcac.org/AboutUs.php" target="_blank">Partners</a>
+              </li>
+            </ul>
+
+          </div>
+          <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> SMCAC.org</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+</body>
+</html>
