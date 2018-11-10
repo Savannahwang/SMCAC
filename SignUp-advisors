@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>SignUp-advisors</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="news_keywords" content="SMCAC, an unbiased non-profit organization, cancer patients, activists, experts">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384 MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<style>
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    margin: 0;
+}
+@media (min-width: 1200px)
+.container {
+    width: 1170px;
+}
+@media (min-width: 992px)
+.container {
+    width: 970px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form-signup {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    display: block;
+}
+h2 {
+    display: block;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.1;
+    
+}
+.form-signin-heading {
+    margin-bottom: 10px;
+    font-size:30px;
+    margin-top: 20px;
+    color:black;
+    font-family: Roboto;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    cursor: default;
+}
+.form-signUP input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signup .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);   
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input{
+    margin: 0;
+    font: inherit;
+    font-family: Roboto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}
+.checkbox {
+    font-weight: normal;
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    
+}
+.checkbox label{
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+    display: inline-block;
+    max-width: 100%;
+}
+.checkbox input[type=checkbox]{
+    position: absolute;
+    margin-left: -20px;
+
+}
+input[type=checkbox]{
+    margin: 4px 0 0;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 30px;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn {
+    margin: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family: Roboto;
+    text-align: center;
+    text-rendering: auto;
+    letter-spacing: normal;
+    white-space: nowrap;
+    text-indent: 0px;
+    text-shadow: none;
+    word-spacing: normal;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -moz-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    text-transform: none;
+}
+</style>
+
+<body>
+
+
+<div class="container">
+	
+      <form class="form-signup" action="advisors-signup.php" method="post">
+        <h2 class="form-signup-heading">Sign Up</h2>
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="name" class="form-control" placeholder="Name" value="<?php if(isset($trimmed['name'])) echo $trimmed['name']; ?>">
+        
+        <label for="email" class="sr-only">Email address</label>
+        <input type="text" id="email" class="form-control" placeholder="Email address" value="<?php if (isset($trimmed['email'])) echo $trimmed['email']; ?>">
+        
+        <label for="psword1" class="sr-only">Password</label>
+        <input type="psword1" id="psword1" class="form-control" placeholder="Password" value="<?php if (isset($trimmed['psword1'])) echo $trimmed['psword1']; ?>">
+        
+        <label for="psword2" class="sr-only" >Confirm Password</label>
+	<input type="psword2" id="psword2" class="form-control" placeholder="Confirm Password" value="<?php if (isset($trimmed['psword2'])) echo $trimmed['psword2'];?>">
+	
+        <button class="btn btn-lg btn-primary btn-block" type="submit" value="signup">Sign up</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Forgot Password</button>
+      </form>
+
+</div>
+
+
+</body>
+</html>
